@@ -32,10 +32,70 @@ Example:
    - `charAt` accepts a index (number data type) and return the character on that index in the string.
 
 2. `toUpperCase`
+    - Parameter: - Uppercase(string data type). 
+    - Return:  string in uppercase (string data type).
+    - Example:
+    ```js
+    let quotes="Stay Hungry Stay Foolish"
+    quotes.toUpperCase();
+    let statement="The true sign of intelligence is not knowledge but imagination";
+    statement.toUpperCase();
+    "Collect moment not things".toUpperCase();
+   
+    ```
+     - `toUpperCase` accepts a string (string data type) and convert it into uppercase.
 3. `toLowerCase`
+    - Parameter: - Lowercase(string data type). 
+    - Return:  string in lowercase (string data type).
+    - Example:
+    ```js
+    let quotes="Stay Hungry Stay Foolish"
+    quotes.toLowerCase();
+    let statement="The true sign of intelligence is not knowledge but imagination";
+    statement.toLowerCase();
+    "Collect moment not things".toLowerCase();
+   
+    ```
+     - `toLowerCase` accepts a string (string data type) and convert it into Lowercase(string).
 4. `trim`
+   - Parameter: - Remove whitespace from both of the end (string data type). 
+    - Return:  string with no whitespace (string data type).
+    - Example:
+    ```js
+    let quotes="    Stay Hungry Stay Foolish"
+    quotes.trim();
+    let statement="The true sign of intelligence is not knowledge but imagination      ";
+    statement.trim();
+    "    Collect moment not things   ".trim();
+   
+    ```
+     - `trim()` accepts a string with whitespace (string data type) and remove whitespace(string)
 5. `trimEnd`
-6. `trimStart`
+ - Parameter: - Remove whitespace from end of the string (string data type). 
+    - Return:  string with no whitespace in the end side (string data type) if no whitespace present in the end side it will return copy of that string.
+    - Example:
+    ```js
+    let quotes="    Stay Hungry Stay Foolish    "
+    quotes.trimEnd();//"    Stay Hungry Stay Foolish"
+    let statement="The true sign of intelligence is not knowledge but imagination      ";
+    statement.trimEnd();//"The true sign of intelligence is not knowledge but imagination"
+    "Collect moment not things".trimEnd();// "Collect moment not things"
+   
+    ```
+     - `trimEnd()` string with no whitespace in the end side (string data type) if no            whitespace  present in the end side it will return copy of that string.(string).
+6. `trimStart()`
+    -Parameter: - Remove whitespace from beginning of the string (string data type). 
+    - Return:  string with no whitespace in the beginning side (string data type) if no whitespace present in the beginning side it will return copy of that string.
+    - Example:
+    ```js
+    let quotes="    Stay Hungry Stay Foolish    "
+    quotes.trimStart();//"Stay Hungry Stay Foolish  "
+    let statement="    The true sign of intelligence is not knowledge but imagination";
+    statement.trimStart();//"The true sign of intelligence is not knowledge but imagination"
+    "Collect moment not things".trimStart();// "Collect moment not things"
+   
+    ```
+     - `trimStart()` string with no whitespace in the beginning side (string data type) if no   whitespace present in the beginning side it will return copy of that string.(string)
 7. `concat`
 8. `endsWith`
 9. `includes`
