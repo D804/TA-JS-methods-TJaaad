@@ -64,7 +64,7 @@ numbersThree.forEach(multidimension);
 
 // Create a new variable named doubleNumbers that store the numberThree array (each element should be multiplied by 2). Use map
 
-let doubleNumbers= 
+let doubleNumbers
 
 // Create a new variable named tripleNumbers that store the numberThree array (each element should be multiplied by 3). Use map
 
