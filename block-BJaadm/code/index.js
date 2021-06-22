@@ -14,17 +14,29 @@ let persons = [
 ];
 
 // Create an array peopleName and store value of sex key from persons array
+let peopleName=function details(gender){
+  return gender.map((g)=>g[2]);
 
+}
+details();
 // Create an array peopleGrade and store the value of grade key from persons array
+let peopleGrade=function details(grade){
+  return grade.map((g)=>g[0]);
 
+}
+details();
 // Create an array peopleSex and store the value of sex key from persons array
+let peopleSex=function details(sex){
+  return sex.map((g)=>g[2]);
 
+}
+details();
 // Log the filtered named of people in peopleName that starts with 'J' or 'P'
 
 // Log the length of filtered named of people in peopleName that starts with 'A' and 'C'
 
 // Log all the filtered male ('M') in persons array
-
+console.log()
 // Log all the filtered female ('F') in persons array
 
 // Log all the filtered female ('F') whose name starts with 'C' or 'J' in persons array
