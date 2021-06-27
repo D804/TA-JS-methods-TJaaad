@@ -108,7 +108,7 @@ Example:
     let person="Elbert Einstein"
     statement.concat(" :",person);//"The true sign of intelligence is not knowledge but imagination:Elbert Einstein"
       "Collect moment not things".concat(": ","Tashmin");// "Collect moment not things:Tashmin"
-   "25".concat(45);//2545
+   "25".concat(45);//"2545"
     ```
      - `concat()` two string get concatinated with the help of concate.parameters are one or more than one if any one of the value is not string implicit conversion take place .   
 8. `endsWith`
@@ -139,14 +139,14 @@ Example:
     let statement="The true sign of intelligence is not knowledge but imagination";
    
     statement.includes("knowledge");//false
-      "Collect moment not things".concat("thing",30);// false
+      "Collect moment not things".includes("thing",30);// false
   
     ```
      - `includes()` includes search character in a string if the character is present it will return true else return false but there is a one optional property is position which search the character lies on that position or not .
 10. `indexOf`
   -Parameter: -  searchValue, fromIndex(optional)
     
-    - Return:  -searchValue or -1 
+    - Return:  -searchindex or -1 
     - Example:
     ```js
     let quotes="Stay Hungry Stay Foolish"
@@ -155,7 +155,7 @@ Example:
     let statement="The true sign of intelligence is not knowledge but imagination";
    
     statement.indexOf("work");//-1
-      "Collect moment not things".concat("thing",30);// -1
+      "Collect moment not things".indexOf("thing",30);// -1
       "work hard".indexOf("",3);//3
   
     ```
@@ -164,7 +164,7 @@ Example:
 11. `lastIndexOf`
     -Parameter: -  searchValue, fromIndex(optional)
     
-    - Return:  -searchValue or -1 
+    - Return:  -searchindex or -1 
     - Example:
     ```js
     let quotes="Stay Hungry Stay Foolish"
@@ -173,16 +173,150 @@ Example:
     let statement="The true sign of intelligence is not knowledge but imagination true";
    
     statement.lastIndexOf("true",20);//4
-      "Collect moment not things".concat("thing",30);// -1
+      "Collect moment not things".lastIndexOf("thing",30);// -1
       
   
     ```
      - `lastIndexOf()` 
-
+     it gives the last index of given value  if its find the value it will return last index of that value else return -1.
+     if search value is empty then from index will return.
+     default value is infinity so if we provide from index which is greater than the length of that string it will search entire string.
+```
 12. `padEnd`
+-Parameter: -  targetLength, padString
+    
+    - Return:  -string with paddingstring
+    - Example:
+    ```js
+    let quotes="Stay Hungry Stay Foolish"
+    
+    quotes.padEnd(30,".");//"Stay Hungry Stay Foolish......"
+    let statement="The true sign of intelligence is not knowledge but imagination"
+   
+    statement.padEnd(15,"..");//"The true sign of intelligence is not knowledge but imagination"
+      "Collect moment not things".padEnd(40,"s");// "Collect moment not thingssssssssssssssss"
+      
+  
+    ```
+     - `padEnd()` 
+    it will give the padding to the string it will take first value which is length if provided string is less than the value it will add padding to that string if value is less than the string the it will result as it is.
+
+     ```
 13. `padStart`
+-Parameter: -  targetLength, padString
+    
+    - Return:  -string with padding in start of the string
+    - Example:
+    ```js
+    let quotes="Stay Hungry Stay Foolish"
+    
+    quotes.padStart(30,".");//"......Stay Hungry Stay Foolish"
+    let statement="The true sign of intelligence is not knowledge but imagination"
+   
+    statement.padStart(15,"..");//"The true sign of intelligence is not knowledge but imagination"
+      "Collect moment not things".padStart(40,"$");// "$$$$$$$$$$$$$$$Collect moment not things"
+      
+  
+    ```
+     - `padStart()` 
+    it will give  padding to the starting of the string if value is less than the length of the string it will return string as it is.
 14. `repeat`
+-Parameter: - count(0 to infinity)
+    
+    - Return:  -string with given no of copies.
+    - Example:
+    ```js
+    let quotes="Stay Hungry Stay Foolish"
+    
+    quotes.repeat(5);//"Stay Hungry Stay FoolishStay Hungry Stay FoolishStay Hungry Stay FoolishStay Hungry Stay FoolishStay Hungry Stay Foolish"
+    let statement="The true sign of intelligence is not knowledge but imagination"
+   
+    statement.repeat(0);//"The true sign of intelligence is not knowledge but imagination"
+      "Collect moment not things".repeat(1);// "Collect moment not things"
+      
+  
+    ```
+     - `repeat`
+    it will give repeatation of the string .if we provide negative value it will return error and .so acceptable value is 0 to infinity.
 15. `replace`
+-Parameter: -regexp (pattern)
+             substr
+             newSubstr (replacement)
+             replacerFunction (replacement)
+    
+    - Return:  - neew string with first or all replaced value. 
+    - Example:
+    ```js
+    let quotes="Stay Hungry Stay idot"
+    
+    quotes.replace("idot","foolish");//"Stay Hungry Stay Foolish"
+    let statement="The true sign of intelligence is not idea but imagination"
+   
+    statement.replace("idea","knowledge");//"The true sign of intelligence is not knowledge but imagination"
+      "Collect money not things".replace("money""moment);// "Collect moment not things"
+      
+  
+    ```
+     - `replace`
+    it will replace string words with assign words.it will return new string.
 16. `slice`
+-Parameter: -beginIndex
+             endIndex Optional
+           
+    
+    - Return:  - new string with extracted  string
+    - Example:
+    ```js
+    let quotes="Stay Hungry Stay idot"
+    
+    quotes.slice(5,10);//"Hungr"
+    let statement="The true sign of intelligence is not idea but imagination"
+   
+    statement.slice(-2);// "on"
+      "Collect money not things".slice(40,5);// ""
+      
+  
+    ```
+     - `slice`
+    it will return new string with with extracted string.
 17. `split`
+-Parameter: separator (Optional)
+             limit (Optional)
+           
+    
+    - Return:  - array of string splited.
+    - Example:
+    ```js
+    let quotes="Stay Hungry Stay idot"
+    
+    quotes.split();//["Stay Hungry Stay idot"]
+    let statement="The true sign of intelligence is not idea but imagination"
+   
+    statement.split(' ');// ["The", "true", "sign", "of", "intelligence", "is", "not", "idea", "but", "imagination"]
+      "Collect moment not things".split(" ");["Collect", "moment", "not", "things"]
+      
+  
+    ```
+     - `split`
+    it will divide string into list of array.
 18. `substring`
+-Parameter: indexStart
+             indexEnd (Optional)
+           
+    
+    - Return:  - new string with specific part of string.
+    - Example:
+    ```js
+    let quotes="Stay Hungry Stay idot"
+    
+    quotes.substring(5,5);//""
+    let statement="The true sign of intelligence is not idea but imagination"
+   
+    statement.substring(2,5);// "e t"
+      "Collect moment not things".substring(NaN);"Collect moment not things"
+  
+    ```
+     - `substring`
+    it will return a part of string from string.if we provide greater value in indexStart and less value in indexEnd it will swap the value.
+    if indexStart and indexEnd is equal it will return empty string. 
+
