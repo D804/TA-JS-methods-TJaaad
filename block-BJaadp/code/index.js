@@ -16,17 +16,23 @@ let persons = [
 // NOTE: Use reduce method whereever you can to solve this exercise:
 
 // Find the average grade
+grade.reduce(acc,cv)
+for(let i=0;i<=grade.length;i++){
+  acc[i];
+}
+
 
 // Find the average grade of male
+for(let gender of sex)
 
 // Find the average grade of female
-
+for(let gender of sex)
 // Find the highest grade
-
+for(let gender of sex)
 // Find the highest grade in male
-
+for(let gender of sex)
 // Find the highest grade in female
-
+for(let gender of sex)
 // Find the highest grade for people whose name starts with 'J' or 'P'
 
 const fruitBasket = [
